@@ -54,7 +54,7 @@ h4 {
     line-height: normal;
     font-style: normal;
     text-transform: uppercase;
-    color: #404040; /* исправит на # eeeeee;*/
+    color:#eeeeee;
 }
 
 h5 {
@@ -79,10 +79,12 @@ div {
 
 header {
     position: relative;
+    width: 100%;
+    border: 10px solid red; /* !!!DELETE in the finish */
 }
 
 .container {
-    /* width: 100%; */
+    width: 100%;
     margin: 0 auto;
 }
 .navBar {
@@ -103,10 +105,11 @@ li {
     padding: 35px 0 35px 20px;
 }
 
-#top-search {  !!!! dont work
-    /* position: relative;
+#top-search {  
+    /* !!!! dont work */
+    position: relative;
     width: 25%;
-    height: 37px; */
+    height: 37px;
 }
 
 .search {
@@ -140,7 +143,6 @@ li {
     background-color: green;
     float: right;
     margin: 35px 0 35px 20px;
-    
 }
 
 .logo_container{
@@ -167,7 +169,8 @@ li {
 
 /* down menu */
 .primary {
-    background: url(../img/nav_bg.png) no-repeat;
+    background: url(../img/nav_bg.png) no-repeat; 
+    /* !!!not all width */
     height: 64px;
     width: 100%;
     padding-left: 41px;
@@ -183,7 +186,7 @@ li {
 
 .menu li {
     float: left;
-    display: inline;
+    /* display: inline; */
     padding: 0 35px 0 40px;
     background: url(img/nav_marker.png) no-repeat right center;
     /* не работает вставка шариков между ссылками меню*/
@@ -200,6 +203,9 @@ li {
     float: right;
 }
 
+#title{
+    width: 100%;  
+}
 
 .titles {
     /* margin-top: 60px; */
@@ -230,6 +236,8 @@ li {
 }
 
 #our {
+    width: 100%;
+    border: 10px solid red;
    
 }
 .services {
@@ -244,9 +252,8 @@ li {
     text-align: center;
     margin: 10px 0 40px 0;
     padding: 0 25px 0 25px;
-    border: 2px solid #b4b4b4;
-    border-top: transparent;
-    border-bottom: transparent;
+    border-left: 2px solid #b4b4b4;
+    border-right: 2px solid #b4b4b4;
 }
 
 .services_item img {
@@ -276,17 +283,21 @@ li {
     border-right: transparent;
 }
 
-#content {
-    background: #f6f6f6; /* не очистило тело страницы.*/
-    border: 2px solid red;
+#content { 
+    width: 100%;    
+    background: #f6f6f6;/* dont work */
+    border-radius: 15px;  /* dont work */
+    border: 1px  red;/* dont work */
 }
 
 .content_item {
+    border-top: #af2330 5px;
     width: 33%;
     float: left;
     text-align: left;
     margin: 50px 0 35px 0;
     padding: 0 25px 0 25px;
+    background: #f6f6f6;/* dont work */
 }
 
 .content_item a {
@@ -295,9 +306,14 @@ li {
 }
 
 #maps {
-    padding-top: 200px;
+    padding-top: 40px;
+    width: 100%;
     /* margin-top: 30px; */
+    border-top: 2px solid black;
+    margin-top: 30px;
     display: inline-block;
+    background: #404040;
+    border-radius: 15px;     
 }
 
 .map_item {
@@ -308,29 +324,45 @@ li {
     text-align: left;
     margin: 35px 0 20px 0;
     padding: 0 20px 0 15px;
+    /* color: #ffffff; */
+    
+    
     /* border: 2px solid #b4b4b4;
     border-top: transparent;
     border-bottom: transparent; */
     /* padding: 35px 20px 20px 15px; */
 }
-.map_item ul {    
+.map_item ul { 
+    
+    /* color: #ffffff;    */
 }
 .map_item ul li {
+    /* color: #ffffff; */
     display: block;
     background: url(../img/list-line.png) no-repeat left;
     list-style:none;
     border-bottom: 2px solid #636363;
-    border-top: transparent;
 }
 /* #first { background: url(../img/li_arrow_post.png) no-repeat left; */
 .map_item a {
-    color: #404040;
+    color: #ffffff;
+    /* color: #404040; */
     text-decoration: none;
     font-size: 13px;
 }
 .map_item:last-child{
     float: right;
     /* border-right: transparent; */
+}
+
+
+.footer_copyright {
+    position: relative;
+    min-width: 100%;
+    text-align: center;
+    font-size: 12px;
+    
+
 }
 
 
