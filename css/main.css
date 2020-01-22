@@ -88,6 +88,9 @@ header {
 .navBar {
     text-align: center;
 }
+ul{
+
+}
 
 li {
     display: inline;
@@ -100,10 +103,10 @@ li {
     padding: 35px 0 35px 20px;
 }
 
-#top-search {
-    position: relative;
+#top-search {  !!!! dont work
+    /* position: relative;
     width: 25%;
-    height: 37px;
+    height: 37px; */
 }
 
 .search {
@@ -124,7 +127,6 @@ li {
 }
 
 .submit_image {
-    /*background: url(../img/search-submit.png) no-repeat 50% 50%; !* рисунок поиска не залез*!*/
     border-radius: 10px;
     position: absolute;
     width: 33px;
@@ -227,12 +229,17 @@ li {
     text-align: center;
 }
 
+#our {
+   
+}
 .services {
     margin-top: 50px;
+    /* border-bottom: 2px solid #b4b4b4; */
 }
 
 .services_item {
     width: 25%;
+    /* when smaller 0ne columm one time and afrter good */
     float: left;
     text-align: center;
     margin: 10px 0 40px 0;
@@ -240,7 +247,6 @@ li {
     border: 2px solid #b4b4b4;
     border-top: transparent;
     border-bottom: transparent;
-
 }
 
 .services_item img {
@@ -272,12 +278,11 @@ li {
 
 #content {
     background: #f6f6f6; /* не очистило тело страницы.*/
-
+    border: 2px solid red;
 }
 
 .content_item {
     width: 33%;
-    min-width: 50px;
     float: left;
     text-align: left;
     margin: 50px 0 35px 0;
@@ -297,6 +302,8 @@ li {
 
 .map_item {
     width: 25%;
+    /* min-width: 5%; */
+    /* min-width: 50px;  */
     float: left;
     text-align: left;
     margin: 35px 0 20px 0;
@@ -312,6 +319,8 @@ li {
     display: block;
     background: url(../img/list-line.png) no-repeat left;
     list-style:none;
+    border-bottom: 2px solid #636363;
+    border-top: transparent;
 }
 /* #first { background: url(../img/li_arrow_post.png) no-repeat left; */
 .map_item a {
