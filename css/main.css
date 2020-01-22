@@ -214,7 +214,7 @@ li {
     color: #888888;
     font-size: 20px;
     font-style: italic;
-    border-bottom: 4px solid #b4b4b4;
+    border-bottom: 2px solid #aeaeae;
 }
 
 .titles p {
@@ -237,8 +237,12 @@ li {
 
 #our {
     width: 100%;
-    border: 10px solid red;
-   
+    /* border: 10px solid red; */
+    /* margin-top: 30px; */
+    display: inline-block;
+    border-bottom: 2px solid #aeaeae;
+    margin-bottom: 35px;
+
 }
 .services {
     margin-top: 50px;
@@ -252,8 +256,7 @@ li {
     text-align: center;
     margin: 10px 0 40px 0;
     padding: 0 25px 0 25px;
-    border-left: 2px solid #b4b4b4;
-    border-right: 2px solid #b4b4b4;
+    border-right: 2px solid #aeaeae;
 }
 
 .services_item img {
@@ -284,18 +287,19 @@ li {
 }
 
 #content { 
-    width: 100%;    
-    background: #f6f6f6;/* dont work */
-    border-radius: 15px;  /* dont work */
-    border: 1px  red;/* dont work */
+    padding: 35px 0 30px 0;
+    width: 100%;
+    background: #f6f6f6;
+    /* левый нижний угол не обрезало!!! */
+    border-radius: 15px; 
+    display: inline-block;
 }
 
 .content_item {
-    border-top: #af2330 5px;
-    width: 33%;
+    width: 33.33%;
     float: left;
     text-align: left;
-    margin: 50px 0 35px 0;
+    /* margin: 50px 0 35px 0; */
     padding: 0 25px 0 25px;
     background: #f6f6f6;/* dont work */
 }
@@ -306,11 +310,8 @@ li {
 }
 
 #maps {
-    padding-top: 40px;
     width: 100%;
-    /* margin-top: 30px; */
-    border-top: 2px solid black;
-    margin-top: 30px;
+    margin-top: 35px;
     display: inline-block;
     background: #404040;
     border-radius: 15px;     
@@ -324,20 +325,12 @@ li {
     text-align: left;
     margin: 35px 0 20px 0;
     padding: 0 20px 0 15px;
-    /* color: #ffffff; */
-    
-    
-    /* border: 2px solid #b4b4b4;
-    border-top: transparent;
-    border-bottom: transparent; */
     /* padding: 35px 20px 20px 15px; */
-}
+    }
 .map_item ul { 
     
-    /* color: #ffffff;    */
 }
 .map_item ul li {
-    /* color: #ffffff; */
     display: block;
     background: url(../img/list-line.png) no-repeat left;
     list-style:none;
@@ -346,23 +339,40 @@ li {
 /* #first { background: url(../img/li_arrow_post.png) no-repeat left; */
 .map_item a {
     color: #ffffff;
-    /* color: #404040; */
     text-decoration: none;
     font-size: 13px;
 }
 .map_item:last-child{
     float: right;
-    /* border-right: transparent; */
 }
 
+footer{
+    margin-top: 35px;
+    border-top: 2px solid #aeaeae ;
+    
+    
+}
+.down_menu ul li{
+    display: inline;
+    list-style: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.down_menu a {
+    color: #505050;
+    text-decoration: none;
+    font-size: 12px;
+}
 
 .footer_copyright {
+    padding-top: 1px;
+    padding-bottom: 20px;
     position: relative;
     min-width: 100%;
     text-align: center;
     font-size: 12px;
-    
-
+    color: #696868;
 }
 
 
