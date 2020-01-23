@@ -216,11 +216,9 @@ li {
     font-style: italic;
     border-bottom: 2px solid #aeaeae;
 }
-
 .titles p {
     margin-top: 5px;
 }
-
 .button {
     background: #af2330;
     color: #fff;
@@ -234,7 +232,6 @@ li {
     padding: 0;
     text-align: center;
 }
-
 #our {
     width: 100%;
     /* border: 10px solid red; */
@@ -242,13 +239,11 @@ li {
     display: inline-block;
     border-bottom: 2px solid #aeaeae;
     margin-bottom: 35px;
-
 }
 .services {
     margin-top: 50px;
     /* border-bottom: 2px solid #b4b4b4; */
 }
-
 .services_item {
     width: 25%;
     /* when smaller 0ne columm one time and afrter good */
@@ -300,15 +295,104 @@ li {
     text-align: left;
     padding: 0 25px 0 25px;
 }
-.arow_box {
-    background:black ;
-
+.content_item p{
+    color: #757474
+}
+.welcome{
+    font-weight: 500;
+    color: #404040;
+}
+.blog_red{
+    color: #af2330;
 }
 
 
-.content_item a {
+.content_item a{
     background-color: #cdcdcd;
     color: #404040;
+}
+
+.arrow_box {
+	position: relative;
+	background: #eeeeee;
+    border: 1px solid #b3b3b3;
+    border-top: transparent;
+    border-radius: 10px;
+    font-style: italic;
+    padding: 20px 10px 20px 30px;
+
+}
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(238, 238, 238, 0);
+	border-top-color: #eee;
+	border-width: 20px;
+	left: 50%;
+	margin-left: -20px;
+}
+.arrow_box:before {
+	border-color: rgba(179, 179, 179, 0);
+	border-top-color: #b3b3b3;
+	border-width: 27px;
+	left: 50%;
+	margin-left: -28px;
+}
+.our_clients{
+    float: right;
+}
+#name_clients{
+    position: relative; 
+    /* не отыгрывает роли чисто для наполнения */
+}
+#name_clients li{
+    display: block;
+    font-size: 14px;
+    color: #404040;
+}
+#name_clients li:last-child{
+    font-size: 12px;
+    color: #696868;
+}
+
+#blog {
+    float: left;
+    text-align: left;
+}
+#blog p{
+    padding: 0;
+    margin: 0;
+}
+
+/* .line{
+    float: left;
+} */
+.blog_line{
+float: left;
+}
+.blog_line li{
+    font-style: normal;
+    font-size: 14px;
+    /* при уменьшении на необходимыей 12 px плывет */
+    width: 100%;
+    display: inline;
+    list-style:none;
+    background: url(../img/date.png) no-repeat;
+    padding-left:  20px;
+}
+.blog_line li:nth-child(2){
+    background: url(../img/auth.png) no-repeat;
+}
+.blog_line li:nth-child(3){
+    background: url(../img/comments.png) no-repeat;
 }
 
 #maps {
@@ -326,7 +410,7 @@ li {
     float: left;
     text-align: left;
     /* margin: 35px 0 20px 0; */
-    padding: 35 20px 20 15px;
+    padding: 35px 20px 20px 15px;
     padding-right: 20px;
     /* padding: 35px 20px 20px 15px; */
 }
@@ -335,7 +419,7 @@ li {
     padding-right: 20px;
 }
 .map_item ul { 
-       
+    padding-left: 0px;
 }
 
 .map_item ul li {
