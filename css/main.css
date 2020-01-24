@@ -136,14 +136,57 @@ li {
     margin: -17px;
 
 }
-.join {
+/* .icon-bar {
     padding: 0;
     margin:0;
     width: 25%;
     background-color: green;
     float: right;
     margin: 35px 0 35px 20px;
-}
+} */
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: inline;
+    text-align: center;
+    padding: 5px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 16px;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3b5999;
+    color: #fff;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: #fff;
+  }
+  .rss {
+    background: #ef9200;
+    color: #fff;
+  }
+  .email{
+    background: #b0b0b0;
+    color: #fff;
+  }
 
 .logo_container{
     padding: 0;
@@ -197,6 +240,7 @@ li {
     text-decoration: none;
     font-size: 28px;
     font-family: 'Birch Std';
+    
 }
 
 .menu:last-child {
@@ -478,6 +522,39 @@ footer{
     color: #696868;
 }
 
+
+#top_button {
+    /* не получается задать кнопке появления после скроллинга, а не сразу*/
+    display: inline-block;
+    background-color: #b0b0b0;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    z-index: 1000;
+    
+  }
+  #top_button:hover {
+    cursor: pointer;
+    background-color: #27aac6;
+  }
+  #top_button:active {
+    background-color: #555;
+  }
+  #top_button::after {
+  content: "\f106";
+  font-family:"Font Awesome 5 Free";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 30px;
+  color: #fff;
+}
 
 
 
