@@ -136,56 +136,42 @@ li {
     margin: -17px;
 
 }
-/* .icon-bar {
-    padding: 0;
-    margin:0;
-    width: 25%;
-    background-color: green;
-    float: right;
-    margin: 35px 0 35px 20px;
-} */
 
-/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
-    position: fixed;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    position: absolute;
+    /* помогло */
+    top: 30px;
+    right: 30px;
   }
-  
-  /* Style the icon bar links */
+
   .icon-bar a {
-    display: inline;
-    text-align: center;
     padding: 5px;
+    font-size: 16px;
+    width: 1px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
     border-radius: 50%;
     transition: all 0.3s ease;
-    color: white;
-    font-size: 16px;
+    color: #fff;
   }
   
-  /* Style the social media icons with color, if you want */
   .icon-bar a:hover {
     background-color: #000;
   }
   
   .facebook {
     background: #3b5999;
-    color: #fff;
   }
   
   .twitter {
     background: #55ACEE;
-    color: #fff;
   }
   .rss {
     background: #ef9200;
-    color: #fff;
   }
   .email{
     background: #b0b0b0;
-    color: #fff;
   }
 
 .logo_container{
@@ -240,7 +226,6 @@ li {
     text-decoration: none;
     font-size: 28px;
     font-family: 'Birch Std';
-    
 }
 
 .menu:last-child {
@@ -254,11 +239,14 @@ li {
 .titles {
     /* margin-top: 60px; */
     padding: 60px 0 80px 0;
+    position:relative;
     text-align: center;
     color: #888888;
     font-size: 20px;
     font-style: italic;
     border-bottom: 2px solid #aeaeae;
+    padding-bottom: 40px;
+    /* !!! */
 }
 .titles p {
     margin-top: 5px;
@@ -276,21 +264,17 @@ li {
     padding: 0;
     text-align: center;
 }
-#our {
+#our { 
     width: 100%;
-    /* border: 10px solid red; */
-    /* margin-top: 30px; */
     display: inline-block;
     border-bottom: 2px solid #aeaeae;
     margin-bottom: 35px;
 }
 .services {
     margin-top: 50px;
-    /* border-bottom: 2px solid #b4b4b4; */
 }
 .services_item {
     width: 25%;
-    /* when smaller 0ne columm one time and afrter good */
     float: left;
     text-align: center;
     margin: 10px 0 40px 0;
@@ -449,14 +433,10 @@ float: left;
 
 .map_item {
     width: 25%;
-    /* min-width: 5%; */
-    /* min-width: 50px;  */
     float: left;
     text-align: left;
-    /* margin: 35px 0 20px 0; */
     padding: 35px 20px 20px 15px;
     padding-right: 20px;
-    /* padding: 35px 20px 20px 15px; */
 }
 .map_item:last-child{
     float: right;
@@ -537,24 +517,53 @@ footer{
     right: 30px;
     transition: background-color .3s;
     z-index: 1000;
-    
-  }
+}
   #top_button:hover {
     cursor: pointer;
     background-color: #27aac6;
-  }
+}
   #top_button:active {
     background-color: #555;
-  }
+}
   #top_button::after {
   content: "\f106";
   font-family:"Font Awesome 5 Free";
-  font-weight: normal;
+  font-weight: 900;
   font-style: normal;
-  font-size: 1em;
+  font-size: 2em;
   line-height: 30px;
   color: #fff;
 }
+/* The dot/bullet/indicator container */
+.slideshow-container{
+    margin-top: 50px;
+    margin-left: 45%;
+}
+.dot-container {
+    width: 10%;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #c0c0c0; 
+    position:absolute;
+    height:40px;   
+}
+  
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #f6f6f6;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  /* Add a background color to the active dot/circle */
+.active, .dot:hover {
+    background-color: #717171;
+  }
 
 
 
