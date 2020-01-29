@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Design group and Master</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+   
+        
 </head>
 <body>
     <a id="top_button"></a> 
-    <!-- версия fontawesome CSS  -->
     <header>
         <div class="container">
             <div class="top_head">
                 <div class="form">
-                    <!-- <div class="logo_container">
-                        <img src="img/logo.png" alt="Logo" class="logo">
-        
-                    </div> -->
                     <ul>
                         <li>
                             Search:
@@ -55,17 +53,18 @@
             </div>
             <nav class="navTop">
                 <ul class="menu">
+                    <!-- контент из меню уходит за пределы контейнера -->
                     <li class="menu_item">
                         <a href="#">Home</a>
                     </li>
                     <li class="menu_item">
                         <a href="#">About Us</a>
                     </li>
-                    <li class="menu_item" class="menu_item">
+                    <li class="menu_item">
                         <a href="#">Our Services</a>
                     </li>
                     <li class="menu_item_logo">
-                        <a href="#" class="logo_link">
+                        <a href="#" id="logo_link">
                             <img class="logo_img" src="img/logo.png" alt="Design_group" class="logo">
                         </a>
                     </li>
@@ -80,7 +79,7 @@
                     </li>
                 </ul>  
             </nav>
-        </nav>
+        </div>
     </header>
     <section id="title">
         <div class="titles">
@@ -374,6 +373,26 @@
             © 2020 Design Group. All Rights Reserved.
         </p>
     </footer>
+    <style>
+        img:hover {
+          animation: shake 0.5s;
+          animation-iteration-count: infinite;
+        }
+        @keyframes shake {
+          0% { transform: translate(1px, 1px) rotate(0deg); }
+          10% { transform: translate(-1px, -2px) rotate(-1deg); }
+          20% { transform: translate(-3px, 0px) rotate(1deg); }
+          30% { transform: translate(3px, 2px) rotate(0deg); }
+          40% { transform: translate(1px, -1px) rotate(1deg); }
+          50% { transform: translate(-1px, 2px) rotate(-1deg); }
+          60% { transform: translate(-3px, 1px) rotate(0deg); }
+          70% { transform: translate(3px, 1px) rotate(-1deg); }
+          80% { transform: translate(-1px, -1px) rotate(1deg); }
+          90% { transform: translate(1px, 2px) rotate(0deg); }
+          100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+    </style>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script>
 
@@ -382,7 +401,7 @@
           var btn = $('#top_button');
         
           $(window).scroll(function() {
-            if ($(window).scrollTop() > 300) {
+            if ($(window).scrollTop() > 900) {
               btn.addClass('show');
             } else {
               btn.removeClass('show');
@@ -391,11 +410,11 @@
         
           btn.on('click', function(e) {
             e.preventDefault();
-            $('html, body').animate({scrollTop:0}, '300');
+            $('html, body').animate({scrollTop:0}, '900');
           });
         
         });
         
-        </script>
+    </script>
 </body>
 </html>
