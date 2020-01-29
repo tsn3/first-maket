@@ -87,9 +87,7 @@ header {
     width: 100%;
     margin: 0 auto;
 }
-.navBar {
-    text-align: center;
-}
+
 ul{
 
 }
@@ -134,7 +132,6 @@ li {
     position: absolute;
     width: 33px;
     margin: -17px;
-
 }
 
 .icon-bar {
@@ -174,54 +171,96 @@ li {
     background: #b0b0b0;
   }
 
-.logo_container{
+/* .logo_container{
     padding: 0;
     margin: 0;
     background-color: #fff;
     border-radius: 20%;
     width: 1%;
-}
-.logo {
+} */
+/* .logo { */
     /* display: inline;
     padding: 0;
     margin: 0;
     /* top: 15px; */
-    padding-left: 40%;
-    height: 190px;
-    width: 190px;
+    /* padding-left: 40%;
+    
+    max-width: 190px; 
+    /* !!!check work */
+    /* width: 100%;
+    max-height: 190px;
+    height: auto;
+    
     display: block;
     position: absolute;
     z-index:120;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;  
+ }
+  */
+.nav{
+    text-align: center;
 }
-
 /* down menu */
-.primary {
+.navTop {
     background: url(../img/nav_bg.png) no-repeat; 
     /* !!!not all width */
     height: 64px;
     width: 100%;
-    padding-left: 41px;
-    clear: both;
-}
-
-.menu {
-    width: 100%;
-    margin: 0;
-    display: inline;
+    /* clear: both; */
     background-color: cyan;
 }
 
-.menu li {
-    float: left;
-    /* display: inline; */
-    padding: 0 35px 0 40px;
-    background: url(img/nav_marker.png) no-repeat right center;
-    /* не работает вставка шариков между ссылками меню*/
+.menu {
+    /* width: 100%;
+    margin: 0;
+    /* padding-left: 41px; */
+
+    /* display: inline;
+     */
+
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0;
 }
 
-.menu a {
+.menu_item {
+    /* float: left; */
+    /* display: inline; */
+    /* padding: 0 35px 0 40px; */
+    /* background: url(img/nav_marker.png) no-repeat right center; */
+    /* не работает вставка шариков между ссылками меню*/
+    display: flex;
+  margin: 0px 15px;
+}
+.menu_item a {
+    text-decoration: none;
+    color: #555555;
+}
+.menu_item .active {
+    text-decoration: none;
+    color: #5363db;
+}
+.menu_item_center {
+    display: block;
+}
+.logo {
+    padding: 0 150px;
+    margin: 0;
+    text-align: center;
+}
+.logo_link {
+    display: inline-block;
+  }
+  
+  .logo_img {
+    display: block;
+  }
+
+/* .menu a {
     color: #404040;
     text-decoration: none;
     font-size: 28px;
@@ -230,7 +269,7 @@ li {
 
 .menu:last-child {
     float: right;
-}
+} */
 
 #title{
     width: 100%;  
@@ -283,8 +322,10 @@ li {
 }
 
 .services_item img {
-    width: 96px;
-    height: 96px;
+    max-width: 96px;
+    width: 100%;
+    max-height: 96px;    
+    height: auto;
 }
 
 .services_item p {
