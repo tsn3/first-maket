@@ -8,6 +8,9 @@
     <title>Design group and Master</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+    <!-- responsive menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
    
         
@@ -55,13 +58,13 @@
                 <ul class="menu">
                     <!-- контент из меню уходит за пределы контейнера -->
                     <li class="menu_item">
-                        <a href="#">Home</a>
+                        <a href="#" class="activ_menu">Home</a>
                     </li>
                     <li class="menu_item">
-                        <a href="#">About Us</a>
+                        <a href="#about_us">About Us</a>
                     </li>
                     <li class="menu_item">
-                        <a href="#">Our Services</a>
+                        <a href="#our_Services">Our Services</a>
                     </li>
                     <li class="menu_item_logo">
                         <a href="#" id="logo_link">
@@ -69,14 +72,20 @@
                         </a>
                     </li>
                     <li class="menu_item">
-                        <a href="#">Portfolio</a>
+                        <a href="#portfolio">Portfolio</a>
                     </li>
                     <li class="menu_item">
-                        <a href="#">Blog</a>
+                        <a href="#blog">Blog</a>
                     </li>
                     <li class="menu_item">
-                        <a href="#">Contact Us</a>
+                        <a href="#contact_us">Contact Us</a>
                     </li>
+                    <li> 
+                        <a href="javascript:void(0);" class="icon_menu" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    
                 </ul>  
             </nav>
         </div>
@@ -373,7 +382,6 @@
             © 2020 Design Group. All Rights Reserved.
         </p>
     </footer>
-    
     <style>
         img:hover {
           animation: shake 0.5s;
@@ -393,6 +401,28 @@
           100% { transform: translate(1px, -2px) rotate(-1deg); }
         }
     </style>
+    
+    <!-- /* Переключение между добавлением и удалением «responsive» класса в topnav, когда пользователь нажимает на иконку */ -->    <script>
+        function myFunction() {
+          var x = document.getElementById("menu_item");
+          if (x.className === "menu") {
+            x.className += " responsive";
+            } else {
+            x.className = "menu";
+          }
+        }
+    </script>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script>
