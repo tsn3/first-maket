@@ -10,7 +10,6 @@ body {
     font-size: 17px;
     background: url(../img/body.gif);
 }
-
 /* Text */
 h1 {
     margin: 0;
@@ -22,7 +21,6 @@ h1 {
     color: #404040;
     font-size: 105px;
 }
-
 h2 {
     margin: 0;
     padding: 0;
@@ -32,7 +30,6 @@ h2 {
     font-weight: normal;
     line-height: normal;
 }
-
 h3 {
     margin: 0;
     padding: 0;
@@ -44,7 +41,6 @@ h3 {
     text-transform: uppercase;
 
 }
-
 h4 {
     margin: 0;
     padding: 0;
@@ -56,12 +52,7 @@ h4 {
     text-transform: uppercase;
     color:#eeeeee;
 }
-
 h5 {
-
-}
-
-h6 {
     margin: 0;
     padding: 0;
     font-family: 'BirchStd';
@@ -72,45 +63,36 @@ h6 {
     font-style: normal;
     color: #fff;
 }
-
 div {
     box-sizing: border-box;
 }
-
 header {
     position: relative;
     width: 100%;
     border: 10px solid red; /* !!!DELETE in the finish */
 }
-
 .container {
     width: 100%;
     margin: 0 auto;
 }
-
 ul{ width: 100%;
     position: relative;
-
 }
-
 li {
     display: inline;
     position: relative;
 }
-
 .form {
     margin: 0;
     list-style: none;
     padding: 35px 0 35px 20px;
 }
-
 #top-search {  
     position: relative;
     max-width: 230px;
     width: auto;
     height: 37px;
 }
-
 .search {
     position: relative;
     width: 185px;
@@ -119,7 +101,6 @@ li {
     border: none;
     border-radius: 10px;
 }
-
 .search_link {
     margin: 0;
     padding: 10px 5px;
@@ -127,20 +108,17 @@ li {
     top: 0;
     position: absolute;
 }
-
 .submit_image {
     border-radius: 10px;
     position: absolute;
     width: 33px;
     margin: -17px;
 }
-
 .icon-bar {
     position: absolute;
     top: 30px;
     right: 30px;
 }
-
 .icon-bar a {
     padding: 5px;
     font-size: 16px;
@@ -152,15 +130,12 @@ li {
     transition: all 0.3s ease;
     color: #fff;
 }
-  
 .icon-bar a:hover {
     background-color: #000;
 }
-  
 .facebook {
     background: #3b5999;
 }
-  
 .twitter {
     background: #55ACEE;
 }
@@ -186,6 +161,7 @@ li {
 }
 .menu {
     /* width: 100%; */
+    width: 100%;
     margin: 0;
     padding: 0;
     background: url(../img/nav_bg.png) no-repeat;
@@ -221,18 +197,16 @@ li {
 .menu a.activ_menu {
     color: #af2330;
 }
+ /* Hide the link that should open and close the menu on small screens */
 .menu .icon_menu {
-    display: none;
-    /* Скройте ссылку, которая должна открывать и закрывать topnav на маленьких экранах */
+    display: none; 
 }
 .menu_item_center {
     display: block;
 }
-
 .menu:last-child {
     float: right;
 }
-
 .menu_item_logo{
     position: relative;
 }
@@ -245,18 +219,14 @@ li {
 #logo_link {
     display: inline-block;
 }
-  
 .logo_img {
     display: block;
     max-width: 190px; 
     min-width: 50px;
-    /* !!!check work */
     width: 100%;
     max-height: 190px;
     height: auto;
 }
-
-
 /* .logo_container{
     padding: 0;
     margin: 0;
@@ -284,13 +254,9 @@ li {
     margin-right: auto;  
  }
   */
-
-
- 
 #title{
     width: 100%;  
 }
-
 .titles {
     /* margin-top: 60px; */
     padding: 60px 0 80px 0;
@@ -301,7 +267,6 @@ li {
     font-style: italic;
     border-bottom: 2px solid #aeaeae;
     padding-bottom: 40px;
-    /* !!! */
 }
 .titles p {
     margin-top: 5px;
@@ -309,11 +274,11 @@ li {
 .button {
     background: #af2330;
     color: #fff;
-    /*font-weight: normal;*/
     text-decoration: none;
     border-radius: 9px;
-    width: 268px;
-    height: 60px;
+    /* !dont work size*/
+    /* width: 268px; */
+    /* height: 60px; */
     line-height: 40px;
     font-stretch: ultra-expanded;
     padding: 0;
@@ -336,36 +301,29 @@ li {
     padding: 0 25px 0 25px;
     border-right: 2px solid #aeaeae;
 }
-
 .services_item img {
     max-width: 96px;
     width: 100%;
     max-height: 96px;    
     height: auto;
 }
-
 .services_item p {
     font-size: 15px;
     font-style: italic;
 }
-
 .services_item h3 {
     margin-bottom: 15px;
 }
-
 .services_item a {
     background-color: #404040;
 }
-
 .services_item:first-child{
     border-left: transparent;
 }
-
 .services_item:last-child {
     float: right;
     border-right: transparent;
 }
-
 #content { 
     padding: 35px 0 30px 0;
     width: 100%;
@@ -373,7 +331,6 @@ li {
     border-radius: 15px; 
     display: inline-block;
 }
-
 .content_item {
     width: 33.33%;
     float: left;
@@ -390,13 +347,10 @@ li {
 .blog_red{
     color: #af2330;
 }
-
-
 .content_item a{
     background-color: #cdcdcd;
     color: #404040;
 }
-
 .arrow_box {
 	position: relative;
 	background: #eeeeee;
@@ -405,7 +359,6 @@ li {
     border-radius: 10px;
     font-style: italic;
     padding: 20px 10px 20px 30px;
-
 }
 .arrow_box:after, .arrow_box:before {
 	top: 100%;
@@ -416,7 +369,6 @@ li {
 	position: absolute;
 	pointer-events: none;
 }
-
 .arrow_box:after {
 	border-color: rgba(238, 238, 238, 0);
 	border-top-color: #eee;
@@ -447,7 +399,6 @@ li {
     font-size: 12px;
     color: #696868;
 }
-
 #blog {
     float: left;
     text-align: left;
@@ -456,17 +407,12 @@ li {
     padding: 0;
     margin: 0;
 }
-
-/* .line{
-    float: left;
-} */
 .blog_line{
 float: left;
 }
 .blog_line li{
     font-style: normal;
     font-size: 14px;
-    /* при уменьшении на необходимыей 12 px плывет */
     width: 100%;
     display: inline;
     list-style:none;
@@ -479,7 +425,6 @@ float: left;
 .blog_line li:nth-child(3){
     background: url(../img/comments.png) no-repeat;
 }
-
 #maps {
     width: 100%;
     margin-top: 35px;
@@ -487,7 +432,6 @@ float: left;
     background: #404040;
     border-radius: 15px;     
 }
-
 .map_item {
     width: 25%;
     float: left;
@@ -502,7 +446,6 @@ float: left;
 .map_item ul { 
     padding-left: 0px;
 }
-
 .map_item ul li {
     display: block;
     list-style:none;
@@ -511,16 +454,13 @@ float: left;
     padding-top: 7px;
     padding-bottom: 7px;
     border-bottom: 2px solid #636363;
-    
 }
 .map_item:first-child ul li{
     background: url(../img/list-line1.png) no-repeat;
 }
-
 .map_item ul li:last-child{
     border-bottom: transparent;
 }
-
 .map_item a {
     color: #ffffff;
     text-decoration: none;
@@ -537,20 +477,17 @@ footer{
     width: 100%;    
     text-align: center;
 }
-
 .down_menu ul li{
     display: inline;
     list-style: none;
     padding-left: 15px;
     padding-right: 15px;
 }
-
 .down_menu a {
     color: #505050;
     text-decoration: none;
     font-size: 12px;
 }
-
 .footer_copyright {
     padding-top: 1px;
     padding-bottom: 20px;
@@ -560,8 +497,6 @@ footer{
     font-size: 12px;
     color: #696868;
 }
-
-
 #top_button {
     /* не получается задать кнопке появления после скроллинга, а не сразу*/
     display: inline-block;
@@ -582,7 +517,7 @@ footer{
     background-color: #27aac6;
 }
 #top_button:active {
-    background-color: #555;
+    background-color: #e27319;
 }
 #top_button::after {
   content: "\f106";
@@ -625,7 +560,8 @@ footer{
 
 
 
-/* Если ширина экрана меньше 600 пикселей, скрыть все ссылки, кроме первой («Home»). Показать ссылку, которая должна открывать и закрывать topnav (.icon) */
+/* 
+If the screen width is less than 600 pixels, hide all links except the first («Home»). Show the link that should open and close menu (.icon_menu) */
 @media screen and (max-width: 600px) {
 .menu a:not(:first-child) {display: none;}
     .menu a.icon_menu {
@@ -634,7 +570,9 @@ footer{
     }
 }
 
-  /* Класс «responsive» добавляется в topnav с помощью JavaScript, когда пользователь нажимает на иконку. Этот класс заставляет topnav хорошо выглядеть на маленьких экранах (отображать ссылки вертикально, а не горизонтально) */
+
+/* 
+ Класс «responsive» добавляется в topnav с помощью JavaScript, когда пользователь нажимает на иконку. Этот класс заставляет topnav хорошо выглядеть на маленьких экранах (отображать ссылки вертикально, а не горизонтально) */
 @media screen and (max-width: 600px) {
 .menu.responsive {position: relative;}
     .menu.responsive a.icon_menu {

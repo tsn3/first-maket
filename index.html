@@ -4,16 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <title>Design group and Master</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
-    <!-- responsive menu -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-   
-        
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/media.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">  
 </head>
 <body>
     <a id="top_button"></a> 
@@ -27,7 +21,7 @@
                         </li>
                         <li id="top-search">
                             <input type="text" class="search">
-                            <a class="search_link" href="https://www.google.com"><img class="submit_image" alt="google" src="img/search-submit.png"></a>
+                            <a class="search_link" href="https://www.google.com" target="_blank"><img class="submit_image" alt="google" src="img/search-submit.png"></a>
                         </li>
                     </ul>
                 </div>
@@ -123,11 +117,11 @@
                         Aliquam erat volutpat. Duis ac turpis. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer
                         adipis.
                     </p>
-                    <h6>
+                    <h5>
                         <a href="#" class="button">
                             Read more
                         </a>
-                    </h6>
+                    </h5>
                 </div>
     
                 <div class="services_item">
@@ -139,11 +133,11 @@
                         Fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel,
                         cursus eleifend.
                     </p>
-                    <h6>
+                    <h5>
                         <a href="#" class="button">
                             Read more
                         </a>
-                    </h6>
+                    </h5>
                 </div>
     
                 <div class="services_item">
@@ -155,11 +149,11 @@
                         Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus
                         vestibulum libero.
                     </p>
-                    <h6>
+                    <h5>
                         <a href="#" class="button">
                             Read more
                         </a>
-                    </h6>
+                    </h5>
                 </div>
     
                 <div class="services_item">
@@ -171,11 +165,11 @@
                         Vivamus eget nibh. Etiam cursus leo metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum
                         primis in.
                     </p>
-                    <h6>
+                    <h5>
                         <a href="#" class="button">
                             Read more
                         </a>
-                    </h6>
+                    </h5>
                 </div>
             </div>
         </div>
@@ -199,11 +193,11 @@
                     Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nibh. Etiam
                     cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in.
                 </p>
-                <h6>
+                <h5>
                     <a href="#" class="button">
                         more about us
                     </a>
-                </h6>
+                </h5>
             </div>
             <div class="content_item">
                 <h2>
@@ -261,16 +255,13 @@
                     <p>
                         Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus. Vestibulum libero nisl, porta...
                     </p>
-                    <h6>
+                    <h5>
                         <a href="#" class="button">
                             View All Posts
                         </a>
-                    </h6>
-
+                    </h5>
                 </div>
-                
             </div>
-    
         </div>
     </section>
     <section id="maps">
@@ -382,27 +373,11 @@
             © 2020 Design Group. All Rights Reserved.
         </p>
     </footer>
-    <style>
-        img:hover {
-          animation: shake 0.5s;
-          animation-iteration-count: infinite;
-        }
-        @keyframes shake {
-          0% { transform: translate(1px, 1px) rotate(0deg); }
-          10% { transform: translate(-1px, -2px) rotate(-1deg); }
-          20% { transform: translate(-3px, 0px) rotate(1deg); }
-          30% { transform: translate(3px, 2px) rotate(0deg); }
-          40% { transform: translate(1px, -1px) rotate(1deg); }
-          50% { transform: translate(-1px, 2px) rotate(-1deg); }
-          60% { transform: translate(-3px, 1px) rotate(0deg); }
-          70% { transform: translate(3px, 1px) rotate(-1deg); }
-          80% { transform: translate(-1px, -1px) rotate(1deg); }
-          90% { transform: translate(1px, 2px) rotate(0deg); }
-          100% { transform: translate(1px, -2px) rotate(-1deg); }
-        }
-    </style>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     
-    <!-- /* Переключение между добавлением и удалением «responsive» класса в topnav, когда пользователь нажимает на иконку */ -->    <script>
+    <!-- Switching between adding and removing a “responsive” class in the menu when the user clicks on the icon    -->
+    <script>
         function myFunction() {
           var x = document.getElementById("menu_item");
           if (x.className === "menu") {
@@ -421,31 +396,6 @@
             x.className = "topnav";
           }
         }
-    </script>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-
-        jQuery(document).ready(function() {
-          
-          var btn = $('#top_button');
-        
-          $(window).scroll(function() {
-            if ($(window).scrollTop() > 900) {
-              btn.addClass('show');
-            } else {
-              btn.removeClass('show');
-            }
-          });
-        
-          btn.on('click', function(e) {
-            e.preventDefault();
-            $('html, body').animate({scrollTop:0}, '900');
-          });
-        
-        });
-        
     </script>
 </body>
 </html>
