@@ -11,46 +11,43 @@
 </head>
 <body>
     <a id="top_button"></a> 
-    <header>
+    <header>        
         <div class="container">
-            <div class="top_head">
-                <div class="form">
+            <div class="form">
+                <ul>
+                    <li>
+                        Search:
+                    </li>
+                    <li id="top-search">
+                        <input type="text" class="search">
+                        <a class="search_link" href="https://www.google.com" target="_blank"><img class="submit_image" alt="google" src="img/search-submit.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="icon-bar">
+                <nav>
                     <ul>
                         <li>
-                            Search:
+                            Join Us:
                         </li>
-                        <li id="top-search">
-                            <input type="text" class="search">
-                            <a class="search_link" href="https://www.google.com" target="_blank"><img class="submit_image" alt="google" src="img/search-submit.png"></a>
+                        <li>
+                            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="rss"><i class="fas fa-rss"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="email"><i class="fas fa-envelope"></i>
+                            </a>
                         </li>
                     </ul>
-                </div>
-                <div class="icon-bar">
-                    <nav>
-                        <ul>
-                            <li>
-                                Join Us:
-                            </li>
-                            <li>
-                                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="rss"><i class="fas fa-rss"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="email"><i class="fas fa-envelope"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                </nav>
             </div>
             <nav class="navTop">
                 <ul class="menu">
-                    <!-- контент из меню уходит за пределы контейнера -->
                     <li class="menu_item">
                         <a href="#" class="activ_menu">Home</a>
                     </li>
@@ -79,7 +76,6 @@
                             <i class="fa fa-bars"></i>
                         </a>
                     </li>
-                    
                 </ul>  
             </nav>
         </div>
@@ -230,7 +226,7 @@
                             Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit.
                         </span>
                     </p>
-                    <p> <!-- валидатор матюкается -->
+                    <p> 
                         <ul class="blog_line">
                             <li>May 11, 2011</li>
                             <li>Admin</li>
@@ -245,7 +241,7 @@
                             Aliquam erat volutpat. Duis ac turpis.
                         </span>
                     </p>
-                    <p> <!-- валидатор матюкается -->
+                    <p> 
                         <ul class="blog_line">
                             <li>May 11, 2011</li>
                             <li>Admin</li>
@@ -366,12 +362,13 @@
                             <a href="#">Contact Us</a>
                         </li>
                     </ul>
+                    <p class="footer_copyright">
+                        © 2020 Design Group. All Rights Reserved.
+                    </p>
                 </div>
             </div>
         </div>
-        <p class="footer_copyright">
-            © 2020 Design Group. All Rights Reserved.
-        </p>
+       
     </footer>
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="script.js"></script>

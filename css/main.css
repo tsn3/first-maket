@@ -69,14 +69,17 @@ div {
 header {
     position: relative;
     width: 100%;
-    border: 10px solid red; /* !!!DELETE in the finish */
+    border: 3px solid blueviolet;
 }
 .container {
     width: 100%;
     margin: 0 auto;
+    border: 3px solid red;
+    
 }
-ul{ width: 100%;
+ul{
     position: relative;
+    border: 3px solid yellow;
 }
 li {
     display: inline;
@@ -289,6 +292,7 @@ li {
     display: inline-block;
     border-bottom: 2px solid #aeaeae;
     margin-bottom: 35px;
+    border: 2px solid green;
 }
 .services {
     margin-top: 50px;
