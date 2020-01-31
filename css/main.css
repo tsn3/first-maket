@@ -1,14 +1,22 @@
 
 body {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     font-family: 'Times New Roman', Times, serif;
     color: #404040;
-    width: 90%;
+    width: 100%;
+    max-width: 1200px;
     min-width: 300px;
     margin: 0 5% 0 5%;
     font-size: 17px;
     background: url(../img/body.gif);
+}
+.container {
+    width: 100%;
+    margin: 0 auto;   
+}
+* {
+    box-sizing: border-box;
 }
 /* Text */
 h1 {
@@ -63,17 +71,9 @@ h5 {
     font-style: normal;
     color: #fff;
 }
-div {
-    box-sizing: border-box;
-}
 header {
     position: relative;
     width: 100%;
-    border: 3px solid blueviolet;
-}
-.container {
-    width: 100%;
-    margin: 0 auto;   
 }
 ul{
     position: relative;
@@ -150,38 +150,31 @@ li {
 }
 /* menu */
 .navTop {
-    /* !!!not all width */
-    /* max-width: 100%; */
     width: 100%;      
-    /* height: 64px; */
-    margin-bottom: 64px;
-    /* height: auto;  */
-    /* логотип привязан в верхнему краю меню */
-    /* clear: both; */
-    /* background-color: cyan; */
+    margin-bottom: 90px;
+    position: relative;
+}
+.menu-img{
+    max-width: 1200px;
+    width: 100%;
+    height: 64px;
+    position: relative;
 }
 .menu {
-    /* width: 100%; */
     width: 100%;
     margin: 0;
     padding: 0;
-    background: url(../img/nav_bg.png) no-repeat;
+    /* background: url(../img/nav_bg.png) no-repeat; */
     list-style: none;
     display: flex;
-    align-items: center;
-    /* при удалении строчким меню поднимаются вверх */
     justify-content: center;
-    /* margin-top: 50px; */
+    position: absolute;
 }
 .menu_item {
     float: left;
-    /* display: inline; */
-    padding: 0 35px 0 40px;
-    /* не работает вставка шариков между ссылками меню*/
-    /* align-items: center;
-    justify-content: center; */
+    width: 14%;
     display: flex;
-  margin: 0px 15px;
+  margin: 20px 40px;
 }
 .menu_item a {
     text-decoration: none;
@@ -208,55 +201,22 @@ li {
 .menu_item_logo{
     position: relative;
 }
-.logo {
-    padding: 0 150px;
-    margin: 0;
-    text-align: center;
-    /* position: absolute; */
-}
-#logo_link {
+.logo_link {
     display: inline-block;
 }
-.logo_img {
+#logo_img {
+    margin: 0;
+    margin-top: -90px;
+    text-align: center;
     display: block;
-    max-width: 190px; 
-    min-width: 50px;
-    width: 100%;
-    max-height: 190px;
-    height: auto;
+    width: 190px; 
+    height: 190px;    
 }
-/* .logo_container{
-    padding: 0;
-    margin: 0;
-    background-color: #fff;
-    border-radius: 20%;
-    width: 1%;
-} */
-/* .logo { */
-    /* display: inline;
-    padding: 0;
-    margin: 0;
-    /* top: 15px; */
-    /* padding-left: 40%;
-    
-    max-width: 190px; 
-    /* !!!check work */
-    /* width: 100%;
-    max-height: 190px;
-    height: auto;
-    
-    display: block;
-    position: absolute;
-    z-index:120;
-    margin-left: auto;
-    margin-right: auto;  
- }
-  */
 #title{
     width: 100%;  
 }
 .titles {    
-    padding: 60px 0 80px 0;
+    padding: 0 0 80px 0;
     position:relative;
     text-align: center;
     color: #888888;
@@ -385,7 +345,6 @@ li {
 }
 #name_clients{
     position: relative; 
-    /* не отыгрывает роли чисто для наполнения */
 }
 #name_clients li{
     display: block;
@@ -410,7 +369,6 @@ float: left;
 .blog_line li{
     font-style: normal;
     font-size: 14px;
-    width: 100%;
     display: inline;
     list-style:none;
     background: url(../img/date.png) no-repeat;
@@ -463,8 +421,6 @@ float: left;
     text-decoration: none;
     font-size: 13px;
 }
-
-
 footer{
     margin-top: 35px;
     border-top: 2px solid #aeaeae ;
@@ -529,15 +485,19 @@ footer{
 .slideshow-container{
     margin-top: 50px;
     margin-left: 45%;
+    max-width: 140px;
+    width: 100%;
 }
 .dot-container {
     width: 10%;
     padding: 20px;
+    /* display: inline; */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background: #c0c0c0; 
     position:absolute;
-    height:40px;   
+    height:40px; 
+    background-origin: padding-box;
 }
   /* The dots/bullets/indicators */
 .dot {
@@ -566,8 +526,7 @@ If the screen width is less than 600 pixels, hide all links except the first («
       display: block;
     }
 }
-/* 
- Класс «responsive» добавляется в topnav с помощью JavaScript, когда пользователь нажимает на иконку. Этот класс заставляет topnav хорошо выглядеть на маленьких экранах (отображать ссылки вертикально, а не горизонтально) */
+
 @media screen and (max-width: 600px) {
 .menu.responsive {position: relative;}
     .menu.responsive a.icon_menu {
