@@ -17,3 +17,16 @@ jQuery(document).ready(function() {
     });
 
 });
+
+
+// Switching between adding and removing a “responsive” class in the menu when the user clicks on the icon 
+    
+function myFunction() {
+  var x = document.getElementById("menu_item");
+  if (x.className === "menu") {
+    x.className += "responsive";
+    } else {
+    x.className = "menu";
+  }
+}
+    
